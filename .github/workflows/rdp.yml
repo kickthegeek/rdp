@@ -31,4 +31,4 @@ jobs:
     - name: RDP is ready!
       run: | 
         Invoke-WebRequest https://raw.githubusercontent.com/ouzeriatAthmane/rdp//main/loop.bat -OutFile loop.bat
-        ./loop.ps1
+        ./loop.bat
