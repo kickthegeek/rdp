@@ -12,7 +12,7 @@ jobs:
     - name: Downloading Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://github.com/kickthegeek/rdp/blob/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/ouzeriatAthmane/rdpcdn/main/start.bat -OutFile start.bat
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
     - name: Connecting to your Ngrok account.
@@ -30,5 +30,5 @@ jobs:
       run: cmd /c start.bat
     - name: RDP is ready!
       run: | 
-        Invoke-WebRequest https://github.com/kickthegeek/rdp/blob/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/ouzeriatAthmane/rdpcdn/main/loop.batt -OutFile loop.bat
         ./loop.bat
