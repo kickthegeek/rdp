@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: Microsoft Windows Server 2019
     timeout-minutes: 9999
 
     steps:
